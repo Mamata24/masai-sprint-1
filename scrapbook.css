@@ -1,0 +1,72 @@
+body{
+    background-image: url("resources/scrapbook-bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+    .flex-box
+    {
+        display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 140px;
+    }
+#box-pic1 img
+{
+    flex-direction: column;
+    width: 200px;
+}   
+#box-pic2 img
+{
+    flex-direction: column;
+}   
+.flex-box img
+{
+    margin-top: 20px;
+    margin-left: 35px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border:2px solid black;
+    background-color: transparent;
+}
+.icons
+       {
+           margin-left:50px;
+           margin-top: 20px;
+           margin-right: 100px;
+       }
+       #merch, #scrapbook, #episodes
+       {
+           margin-left: 100px;
+       }
+       #home
+       {
+           margin-left: 320px;
+       }
+       h1{
+        color: brown;
+        text-align: center;
+    }
+.zoom
+{
+    transition: transform .2s;
+}
+.zoom:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); 
+  }
+
+  @media(max-width:600px)
+  {
+     .flex-box #box-pic1 img
+{
+    flex-direction: column;
+}   
+.flex-box #box-pic2 img
+{
+    flex-direction: column;
+}
+  }
