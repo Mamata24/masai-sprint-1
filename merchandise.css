@@ -1,0 +1,60 @@
+body{
+    background-image: url("resources/scrapbook-bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+    #grid
+    {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 150px ;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    #grid img
+    {
+border: 1px solid black;
+width: 200px;
+    }
+.icons
+       {
+           margin-left:50px;
+           margin-top: 20px;
+           margin-right: 100px;
+       }
+       #merch, #scrapbook, #episodes
+       {
+           margin-left: 100px;
+       }
+       #home
+       {
+           margin-left: 320px;
+       }
+.zoom
+{
+    transition: transform .2s;
+}
+.zoom:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); 
+  }
+h1{
+    color: brown;
+    text-align: center;
+}
+  @media(max-width:600px)
+  {
+    #home
+    {
+        margin-left: 100px;
+    }
+ #grid {
+     display: grid;
+grid-template-columns: repeat(1,fr);
+ }
+}
+  
